@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset = "UTF-8">
+            <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+            <title>Innotech Solution</title>
+        <!--Bootstrap &CSS-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
+        </head>
+        <body>
+            <!--navbar-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!--logo and brand-->
+                    <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" alt="InnoTech Solutions Logo" width="30" height="30" class="d-inline-block align-text-top"> InnoTech Solution</a>
+                    <!--toggler button-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                    <!--collapse munu-->
+                    <div class="collapse navbar-collapse " id="navbarToggler01">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"> 
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Suport</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">InnoTech innovations</a>
+                            </li>
+                        </ul>
+                    <!--search form-->
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success me-1" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Hero section-->
+            <section Id="home" class="hero-section d-flex align-items-center text-center text-white">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="/img/movingbox.mp4" type="video/mp4">
+                    <!-- Fallback image for browsers that can't play video -->
+                    <img src="img/fallbackhero.jpg" alt="Hero image showing innovative tech solutions" class="img-fluid"></video>
+                    <div class="overlay"></div>
+                <div class="container">
+                    <h1 class="display-4 fw-bold">Innovating Your Future</h1>
+                    <p class="lead mb-4">Empowering businesses with technology solutions that matter.</p>
+                    <div>
+                        <a href="#portfolio" class="btn btn-green btn-lg me-2">Get Started</a>
+                        <a href="#services" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            <!--services section-->
+            <section id="services" class="py-5">
+                <div class="section-divider"></div>
+                <div class="container">
+                    <h2 class="text-center mb-4 fw-bold">Our Services</h2>
+                    <div class="row g-4">
+                        <!-- Service 1 -->
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 shadow-sm">
+                            <div class="card-header">Featured</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text">We create modern, responsive websites tailored to your business or profile.</p>
+                                <a href="#" class="btn btn-green">Learn More</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">Updated 6 hours ago</div>
+                            </div>
+                        </div>
+                        <!-- Service 2 -->
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 shadow-sm">
+                            <div class="card-header">Featured</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tech Support</h5>
+                                <p class="card-text">Helping you choose and implement the right technology solutions for your problems and ideas.</p>
+                                <a href="#" class="btn btn-green">Learn More</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">Updated 4 days ago</div>
+                            </div>
+                        </div>
+                        <!-- Service 3 -->
+                        <div class="col-md-4">
+                            <div class="card text-center h-100 shadow-sm">
+                                <div class="card-header">Featured</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">InnoTech Protect</h5>
+                                    <p class="card-text">Protect your business with new cybersecurity tool, InnoTech Protect, browsing and sharing data online protected.</p>
+                                    <a href="#" class="btn btn-green">Learn More</a>
+                                </div>
+                                <div class="card-footer text-body-secondary">Updated 8 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><div class="section-divider"></div>
+            <!--portfolio section-->
+            <section id="portfolio" class="py-4 bg-light">
+                <h2 class="text-center mb-4 fw-bold">Portfolio</h2>
+            <!-- Full-width carousel -->
+                <div id="portfolioCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="InnoTech Pay-secure"></button>
+                        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="InnoDatabase"></button>
+                        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="InnoConnect"></button>
+                        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3" aria-label="InnoTech Lifestyle"></button>
+                    </div>
+                    <!-- Carousel Inner -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="8000"> <img src="img/project01.jpg" class="d-block w-100 img-fluid" alt="InnoTech Pay-secure">
+                            <div class="carousel-caption text-center text-md-start">
+                                <h5>InnoTech Pay-secure</h5> <p>Do you want to pay online but isn't sure how safe ones payement will be? look ahead with InnoTech pay-secure, a secure online payment system ensuring safety for digital transactions.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000"> <img src="img/project02.jpg" class="d-block w-100 img-fluid" alt="InnoDatabase">
+                            <div class="carousel-caption text-center text-md-start">
+                                <h5>InnoDatabase</h5> <p>We are building reliable and scalable data management solution for enterprises.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="6000"> <img src="img/project03.jpg" class="d-block w-100 img-fluid" alt="InnoConnect">
+                            <div class="carousel-caption text-center text-md-start">
+                                <h5>InnoConnect</h5> <p>Need to display something from one screen to another? need to acces your data and files via another device? InnoConnect is around the corner. Seamless cross-device connectivity, enabling synchronized displays.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="7000"> <img src="img/project04.jpg" class="d-block w-100 img-fluid" alt="InnoTech Lifestyle">
+                            <div class="carousel-caption text-center text-md-start">
+                                <h5>InnoTech Lifestyle</h5> <p>Do you want to live smarter and secure? Our new project shows you smart living solutions designed to simplify and enhance daily life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--contact form section-->
+            <section id="contact" class="py-5 bg-light">
+                <div class="container"> <h2 class="text-center mb-5 fw-bold">Contact Us</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <form>
+                                <!-- Name -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <label for="name">Name</label>
+                                </div>
+                                <!-- Email -->
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <!-- Message -->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" placeholder="Your message..." id="message" style="height: 150px" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                                <!-- Submit button -->
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-green btn-lg">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="bg-dark text-white pt-4">
+                <!-- Social Media & Language Bar -->
+                <div class="container-fluid border-bottom py-2" style="border-color: #fff !important;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Social media -->
+                        <div>
+                            <span class="me-2 fw-bold">Follow us:</span>
+                            <a href="#" class="text-white me-2" aria-label="Instagram"><svg class="bi" width="20" height="20"><use xlink:href="#instagram"></use></svg></a>
+                            <a href="#" class="text-white me-2" aria-label="Facebook"><svg class="bi" width="20" height="20"><use xlink:href="#facebook"></use></svg></a>
+                            <a href="#" class="text-white" aria-label="Twitter"><svg class="bi" width="20" height="20"><use xlink:href="#twitter"></use></svg></a>
+                        </div>
+                        <!-- Language globe dropdown -->
+                        <div class="dropdown">
+                            <button class="btn btn-dark text-white dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">🌐</button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                                <li><a class="dropdown-item" href="#">Japanese</a></li>
+                                <li><a class="dropdown-item" href="#">Chinese</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Footer Content -->
+                <div class="container py-4">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <h5>Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-white">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 text-white">Services</a></li>
+                                <li class="nav-item mb-2"><a href="#portfolio" class="nav-link p-0 text-white">Portfolio</a></li>
+                                <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-white">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <h5>Support</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#faq" class="nav-link p-0 text-white">FAQ</a></li>
+                                <li class="nav-item mb-2"><a href="#support" class="nav-link p-0 text-white">Support</a></li>
+                                <li class="nav-item mb-2"><a href="#privacy" class="nav-link p-0 text-white">Privacy Policy</a></li>
+                                <li class="nav-item mb-2"><a href="#terms" class="nav-link p-0 text-white">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <h5>Products</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#products" class="nav-link p-0 text-white">InnoTech Protect</a></li>
+                                <li class="nav-item mb-2"><a href="#products" class="nav-link p-0 text-white">InnoConnect</a></li>
+                                <li class="nav-item mb-2"><a href="#products" class="nav-link p-0 text-white">InnoDatabase</a></li>
+                                <li class="nav-item mb-2"><a href="#products" class="nav-link p-0 text-white">InnoTech Pay</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <h5>Community</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#blog" class="nav-link p-0 text-white">Blog</a></li>
+                                <li class="nav-item mb-2"><a href="#news" class="nav-link p-0 text-white">News</a></li>
+                                <li class="nav-item mb-2"><a href="#events" class="nav-link p-0 text-white">Events</a></li>
+                                <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-white">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- All Rights Reserved -->
+                <div class="border-top pt-3 text-center" style="border-color: #fff !important;">
+                    <p class="mb-0 small">© 2025 InnoTech Solution. All rights reserved. <a href="#" class="text-white">Terms Of Use</a> | <a href="#" class="text-white">Privacy Policy</a> |<a href="#" class="text-white">Cookie Policy</a></p>
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>
