@@ -53,13 +53,14 @@ h1, h2, h3, .navbar-brand { font-weight: 600; }
 #services {background-color: #f8f9fa;}
 #services h2 {color: #006400;}
 /*carousel*/
-.carousel-item::before {
+.carousel-item img::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;}
 .carousel-caption {position: absolute; z-index: 2;}
+.carousel-indicators {z-index: 3;}
 /*section wow*/
 .section-divider {
   height: 6px;
