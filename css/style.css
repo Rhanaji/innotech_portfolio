@@ -53,6 +53,8 @@ h1, h2, h3, .navbar-brand { font-weight: 600; }
 #services {background-color: #f8f9fa;}
 #services h2 {color: #006400;}
 /*carousel*/
+.carousel-item {
+  position: relative;}
 .carousel-item::before {
   content: "";
   position: absolute;
@@ -61,6 +63,14 @@ h1, h2, h3, .navbar-brand { font-weight: 600; }
   z-index: 1;}
 .carousel-caption {position: absolute; z-index: 2;}
 .carousel-indicators {z-index: 3;}
+.carousel-caption h5 {font-size: 1.25rem;font-weight: 600;}
+.carousel-caption p {font-size: 0.9rem;line-height: 1.4;}
+/* Scale up again on medium+ screens */
+@media (min-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.75rem;}
+  .carousel-caption p {
+    font-size: 1.1rem;}}
 /*section wow*/
 .section-divider {
   height: 6px;
