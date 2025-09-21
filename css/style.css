@@ -19,6 +19,8 @@ h1, h2, h3, .navbar-brand { font-weight: 600; }
   justify-content: center;
   align-items: center;
   overflow: hidden;}
+.hero-section h1, .hero-section p {animation: fadeInUp 1s ease-in-out;}
+@keyframes fadeInUp { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}}
 .hero-video {
   position: absolute;
   top: 50%;
@@ -32,7 +34,7 @@ h1, h2, h3, .navbar-brand { font-weight: 600; }
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: linear-gradient(
-    rgba(54, 124, 171, 0.6), 
+    rgba(19, 41, 55, 0.6), 
     rgba(152, 251, 192, 0.6)
   );
   z-index: 1;}
@@ -43,6 +45,11 @@ h1, h2, h3, .navbar-brand { font-weight: 600; }
 .btn-green {background-color: #014848; border-color: #06353a; color: #fff; transition: all 0.3s ease; }
 .btn-green:hover {background-color: #00b872; border-color: #05a941;}
 /*services polishing*/
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
 #services {background-color: #f8f9fa;}
 #services h2 {color: #006400;}
 /*carousel*/
@@ -53,9 +60,32 @@ h1, h2, h3, .navbar-brand { font-weight: 600; }
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;}
 .carousel-caption {position: absolute; z-index: 2;}
+/*section wow*/
 .section-divider {
   height: 6px;
   width: 80px;
   background: linear-gradient(to right, #198754, #4caf50);
   margin: 0 auto 40px auto;
   border-radius: 3px;}
+  section {opacity: 0;transform: translateY(30px);transition: opacity 0.8s ease, transform 0.8s ease;}
+  section.visible {opacity: 1;transform: translateY(0);}
+/*form control*/
+.form-control.is-invalid,
+.form-control.is-valid {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+.form-control.is-invalid {
+  border: 2px solid #dc3545;
+}
+.form-control.is-valid {
+  border: 2px solid #28a745;
+}
+.form-floating .invalid-feedback,
+.form-floating .valid-feedback {
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+/*footer*/
+footer a:hover {color: #00b872; text-decoration: underline;}
